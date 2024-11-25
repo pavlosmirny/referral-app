@@ -1,0 +1,79 @@
+.wrapper {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  align-items: center;
+  gap: 20px;
+}
+.counterContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-items: center; */
+  gap: 10px;
+}
+.buttonClaim {
+  background-color: #0098ea;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  /* margin-top: 10px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* gap: 10px; */
+  width: 74px;
+  height: 35px;
+  transition: opacity 0.3s ease;
+}
+
+.buttonClaim.loading {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.spinner {
+  height: 1rem;
+  width: 1rem;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.success {
+  margin-top: 0.5rem;
+  color: #22c55e;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.error {
+  margin-top: 0.5rem;
+  color: #ff0000;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.counterLine {
+  background-color: #e5e5e5;
+  height: 15px;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  /* margin-bottom: 10px; */
+}
+
+.counterFill {
+  background-color: #0098ea;
+  height: 100%;
+  width: 0; /* Динамически обновляется через inline-style */
+  transition: width 0.3s ease-in-out;
+}
+.countTitle {
+  font-size: 18px;
+  font-weight: 600;
+}
