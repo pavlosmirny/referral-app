@@ -1,8 +1,8 @@
 {
-  "name": "ref-app",
+  "name": "referral-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://pavlosmirny.github.io/ref-app",
+  "homepage": "https://pavlosmirny.github.io/referral-app",
   "dependencies": {
     "@craco/craco": "^7.1.0",
     "@orbs-network/ton-access": "^2.3.3",
